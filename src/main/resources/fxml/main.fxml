@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="220.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="400.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../imagensfx/login.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="LockImageView" fitHeight="41.0" fitWidth="55.0" layoutX="141.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../imagensfx/cadicon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="139.0" text="Usuario">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usuariofield" layoutX="105.0" layoutY="134.0" prefHeight="29.0" prefWidth="163.0" promptText="usuario" />
+            <Label layoutX="36.0" layoutY="199.0" text="Senha">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="senhafield" layoutX="105.0" layoutY="186.0" prefHeight="29.0" prefWidth="163.0" promptText="senha" />
+            <Button fx:id="LoginButton" layoutX="36.0" layoutY="268.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="27.0" prefWidth="248.0" style="-fx-background-color: #19d0ca;" text="Login" textFill="#09807a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="36.0" layoutY="308.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="27.0" prefWidth="248.0" style="-fx-background-color: #19d0ca;" text="Fechar" textFill="#09807a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="LoginmenssagemLabel" alignment="CENTER" layoutX="10.0" layoutY="231.0" prefHeight="19.0" prefWidth="316.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="RegisterButton" layoutX="274.0" mnemonicParsing="false" onAction="#RegisterPagOnAction" style="-fx-background-color: #19d0ca;" text="Registrar" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
